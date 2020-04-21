@@ -35,15 +35,13 @@ button {
   outline: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
-}
-
-@media (min-width: 728px) {
-  .container {
-    width: 728px;
-  }
 }
 
 .topbar {
@@ -73,7 +71,6 @@ button {
 }
 
 .posts__stories {
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   margin: 0;
@@ -105,12 +102,6 @@ button {
 
 .feed {
   padding: 0 16px;
-}
-
-@media (min-width: 728px) {
-  .feed {
-    padding: 0;
-  }
 }
 
 .posts__card {
@@ -156,7 +147,6 @@ button {
 .posts__buttons{
   display: flex;
   justify-content: flex-start;
-  list-style: none;
   width: 100%;
   margin: 0;
   padding: 6px;
@@ -189,4 +179,16 @@ button {
   height: 30px;
   border-radius: 100%;
   margin-right: 5px;
+}
+
+@media (min-width: 728px) {
+  .container {
+    width: 728px;
+  }
+}
+
+@media (min-width: 728px) {
+  .feed {
+    padding: 0;
+  }
 }
